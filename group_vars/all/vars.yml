@@ -1,0 +1,16 @@
+---
+# Add global settings here
+
+# aws-cloudformation role settings
+cf_stack_name: "proxy-resources"
+cf_stack_template: "templates/proxy.yml.j2"
+
+# Stack inputs
+cf_stack_inputs:
+  ApplicationImageId: "{{ config_application_ami }}"
+  ApplicationInstanceType: "{{ config_application_instance_type }}"
+  ApplicationAutoscalingDesiredCount: "{{ config_az_count }}"
+  KeyName: "{{ config_application_keyname }}"
+  ProxyImage: "{{ config_proxy_image }}"
+  ProxyImageTag: "{{ config_proxy_image_tag | default('latest') }}"
+  ProxyWhitelist: "{{ config_proxy_whitelist }}"
