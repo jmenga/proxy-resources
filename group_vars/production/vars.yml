@@ -5,7 +5,7 @@ sts_role_arn: arn:aws:iam::543279062384:role/admin
 
 # Network settings
 config_vpc_name: default
-config_az_count: 2
+config_az_count: 1
 
 # Application settings
 config_application_ami: ami-b4ce76d4
