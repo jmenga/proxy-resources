@@ -8,7 +8,7 @@ config_vpc_name: default
 config_az_count: 1
 
 # Application settings
-config_application_ami: ami-b4ce76d4
+config_application_ami: ami-5c7f9b24
 config_application_instance_type: t2.micro
 config_application_keyname: docker-production-aws
 
