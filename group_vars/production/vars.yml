@@ -8,7 +8,7 @@ Stack.Inputs.VpcName: Default
 
 # Application settings
 Stack.Inputs.ApplicationDesiredCount: 1
-Stack.Inputs.ApplicationImageId: ami-5c7f9b24
+Stack.Inputs.ApplicationImageId: ami-fe7dbf86
 Stack.Inputs.ApplicationInstanceType: t2.micro
 Stack.Inputs.KeyName: docker-production-aws
 
